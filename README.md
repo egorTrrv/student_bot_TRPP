@@ -1,2 +1,2 @@
 # super_bot
-super multy-function comprehensive student bot
+super multifunction comprehensive ultimative student bot(SMCUSB)
