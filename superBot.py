@@ -1,5 +1,6 @@
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
+from vk_api.keyboard import VkKeyboard, VkKeyboardColor
 """from mainMenu import MainMenu
 from user import *"""
 vk_session = vk_api.VkApi(token="593662ffd599297e66363409dbd93f093c691c8119fa51c1c5ac4e5f58d41eaa4cad6b2e714e22c9ea72e")
@@ -8,9 +9,11 @@ longpool = VkLongPoll(vk_session)
 
 
 class SuperBot():
-    def send_message_to_user(self, id, message_text):
-        vk_session.method("messages.send", {"user_id": id, "message": message_text + ", друг.", "random_id": 0})
-
+    def send_message_to_user(self, id, message_text, keyboard=None):
+        if keyboard !=None:
+            vk_session.method("messages.send", {"user_id": id, "message": message_text, "random_id": 0, "keyboard": keyboard.get_keyboard()})
+        else:
+            vk_session.method("messages.send", {"user_id": id, "message": message_text, "random_id": 0})
     def input_message_from_user(self):
         for event in longpool.listen():
             if event.type == VkEventType.MESSAGE_NEW:
@@ -19,8 +22,20 @@ class SuperBot():
                     id = event.user_id
                     return [msg, id]
 
+    class KeyboardOfMainMenu:
+        vkKey = VkKeyboard(one_time=True)
+        vkKey.add_button("расписание", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("домашние задания", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("узнать имя преподавателя", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("заметки", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("изменить номер группы", VkKeyboardColor.SECONDARY)
 
-
+        def launch_mm_keyboard(self, sb, text, id):
+            sb.send_message_to_user(id, text, self.vkKey)
 
 
 """

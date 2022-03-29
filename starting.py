@@ -17,5 +17,9 @@ class Starting:
         sb.send_message_to_user(us.id, text)
         answer = sb.input_message_from_user()
         us.student_group = answer[0]
-        text = "номер вашей группы:" + users[us.id].student_group
+        text = "номер вашей группы сохранён:" + users[us.id].student_group
         sb.send_message_to_user(us.id, text)
+        kk = sb.KeyboardOfMainMenu()
+        kk.launch_mm_keyboard(sb, "главное меню", us.id)
+
+
