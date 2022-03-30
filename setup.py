@@ -14,7 +14,7 @@ setuptools.setup(
 	# имя автора
 	author="egorTrrv",
 	# его почта
-	author_email="",
+	author_email="egor.taruraev@yandex.ru",
 	# краткое описание (будет отображаться на PyPi)
 	description="Super Multifunction Comprehensive Ultimative Student Bot (SMCUSB)",
 	# длинное описание (будет отображаться на PyPi, использует readme для заполнения)
@@ -28,7 +28,7 @@ setuptools.setup(
 	# предоставляет pip некоторые метаданные о пакете (отображается на странице PyPi)
 	classifiers=[
 		"Programming Language :: Python :: 3.8",
-		"License :: :: ",
+		"License :: OSI Approved :: MIT License",
 		"Operating System :: OS Independent",
 	],
 	# требуемая версия Python
