@@ -1,6 +1,6 @@
 # super_bot
 
-Super Multifunction Comprehensive Absolute Power Ultimative Student Bot(SMCAPUSB)
+Super Multifunction Comprehensive Absolute Power Ultimative Student Bot (SMCAPUSB)
 
 Бот для социальной сети "Вконтакте", цель которого - помочь студентам РТУ МИРЭА организовать учебную деятельность.
 Функции: показывает расписание, сохраняет домашние задания, находит ФИО преподавателя, делает заметки.
