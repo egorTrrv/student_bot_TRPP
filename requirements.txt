@@ -1,0 +1,5 @@
+vk_api
+python-docx
+openxml
+beautifulsoup
+setuptools
