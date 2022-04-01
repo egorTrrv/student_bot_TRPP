@@ -1,4 +1,5 @@
 import setuptools
+
 # создание описания на основе readme
 with open("README.md", "r") as fh:
 	long_description = fh.read()
@@ -24,7 +25,7 @@ setuptools.setup(
 	# находит все пакеты внутри проекта и объединяет их в дистрибутив
 	packages=setuptools.find_packages(),
 	# зависимости, которые будут установлены вместе с пакетом
-	install_requires=requirements
+	install_requires=requirements,
 	# предоставляет pip некоторые метаданные о пакете (отображается на странице PyPi)
 	classifiers=[
 		"Programming Language :: Python :: 3.8",
@@ -33,4 +34,10 @@ setuptools.setup(
 	],
 	# требуемая версия Python
 	python_requires='>=3.6',
+	command_options={
+        'build_sphinx': {
+            'project': ('setup.py', name),
+            'version': ('setup.py', version),
+            'release': ('setup.py', release),
+            'source_dir': ('setup.py', 'doc')}},
 )

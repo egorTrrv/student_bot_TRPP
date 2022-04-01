@@ -1,5 +1,6 @@
 vk_api
 python-docx
-openxml
-beautifulsoup
+openpyxl
+beautifulsoup4
 setuptools
+sphinx
