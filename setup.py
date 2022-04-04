@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 	long_description = fh.read()
 
 # определение requests как requirements для того, чтобы этот пакет работал; зависимости проекта
-# requirements = ["requests<=2.21.0"]
+requirements = ["requests<=2.21.0"]
 
 setuptools.setup(
 	# имя дистрибутива пакета
@@ -36,8 +36,8 @@ setuptools.setup(
 	python_requires='>=3.6',
 	command_options={
         'build_sphinx': {
-            'project': ('setup.py', name),
-            'version': ('setup.py', version),
-            'release': ('setup.py', release),
+            'project': ('setup.py', "super_bot"),
+            'version': ('setup.py', "0.0.1"),
+            'release': ('setup.py', "04.04.2022"),
             'source_dir': ('setup.py', 'doc')}},
 )
