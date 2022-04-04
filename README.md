@@ -2,6 +2,6 @@
 
 Super Multifunction Comprehensive Absolute Power Ultimative Student Bot (SMCAPUSB)
 
-Бот для социальной сети "Вконтакте", цель которого - помочь студентам РТУ МИРЭА организовать учебную деятельность.
-Функции: показывает расписание, сохраняет домашние задания, находит ФИО преподавателя, делает заметки.
-Написан на языке Питон, с использованием библиотеки Vk_api, в качестве учебного проекта по дисциплине ТРПП студентами МИРЭА.
+A bot for the social network "Vkontakte", the purpose of which is to help students of RTU MIREA organize their educational activities.
+Functions: shows the schedule, saves homework, finds the name of the teacher, takes notes.
+Written in the Python language, using the Vk_api library, as an educational project on the subject of TRPP by MIREA students.
