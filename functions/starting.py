@@ -1,4 +1,4 @@
-from user import *
+from classes.user import *
 
 
 def start(sb, us):

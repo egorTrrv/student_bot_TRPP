@@ -1,7 +1,6 @@
 #модуль запуска. Главное меню. здесь начинаются и сюда возвращают все функции.
-from user import *
-from superBot import SuperBot
-from starting import *
+from classes.superBot import *
+from functions.starting import *
 
 SB1 = SuperBot()
 msg = SB1.input_message_from_user()
