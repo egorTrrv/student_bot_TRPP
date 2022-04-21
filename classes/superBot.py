@@ -63,7 +63,7 @@ class SuperBot():
             хранит свойства клавиатуры
 
         """
-        vkKey = VkKeyboard(one_time=True)#one_time=True чтобы клавиатура исчезла после нажатия
+        vkKey = VkKeyboard(one_time=True, inline=False)#one_time=True чтобы клавиатура исчезла после нажатия
         vkKey.add_button("расписание", VkKeyboardColor.SECONDARY)
         vkKey.add_line()
         vkKey.add_button("домашние задания", VkKeyboardColor.SECONDARY)

@@ -11,6 +11,7 @@ users.update({Us1.id: Us1})
 #найти юзера в бд, если найдешь, то присвоить ему номер группы
 Us1.student_group = set_group(Us1.id)
 while(True):
+    #SB1.launch_mm_keyboard("Введите команду!", Us1.id)
     if msg[0] == "начать":
         start(SB1, Us1)
     elif msg[0] == "расписание":
@@ -24,5 +25,5 @@ while(True):
     elif msg[0] == "изменить номер группы":
         change_number_of_group(SB1, Us1)
     else:
-        SB1.launch_mm_keyboard("Введите уоманду!", Us1.id)
+        SB1.launch_mm_keyboard("Введите команду!", Us1.id)
     msg = SB1.input_message_from_user()

@@ -12,7 +12,8 @@ def scheduling(sb, us):
         elif msg[0] == "на следующую неделю":
             sb.send_message_to_user(us.id, "4!")
         elif msg[0] == "вернуться в главное меню":
-            sb.send_message_to_user(us.id, "5!")
+            text = "вернуться в главное меню*"
+            sb.launch_mm_keyboard(text, us.id)
         else:
             sb.send_message_to_user(us.id, "Введите команду!")
         msg = sb.input_message_from_user()
