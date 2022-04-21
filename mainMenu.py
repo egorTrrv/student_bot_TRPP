@@ -1,6 +1,7 @@
 #модуль запуска. Главное меню. здесь начинаются и сюда возвращают все функции.
 from classes.superBot import *
 from functions.starting import *
+from functions.scheduling import *
 
 
 SB1 = SuperBot()
@@ -13,7 +14,7 @@ while(True):
     if msg[0] == "начать":
         start(SB1, Us1)
     elif msg[0] == "расписание":
-        pass
+        scheduling(SB1,Us1)
     elif msg[0] == "домашние задания":
         pass
     elif msg[0] == "узнать имя преподавателя":
@@ -23,5 +24,5 @@ while(True):
     elif msg[0] == "изменить номер группы":
         change_number_of_group(SB1, Us1)
     else:
-        SB1.send_message_to_user(Us1.id, "Введите команду!")
+        SB1.launch_mm_keyboard("Введите уоманду!", Us1.id)
     msg = SB1.input_message_from_user()

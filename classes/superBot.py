@@ -74,8 +74,20 @@ class SuperBot():
         vkKey.add_line()
         vkKey.add_button("изменить номер группы", VkKeyboardColor.SECONDARY)
 
-    mm_keyboard = KeyboardOfMainMenu().vkKey
+    class KeyboardOfSchedule:
+        vkKey = VkKeyboard(one_time=True)#one_time=True чтобы клавиатура исчезла после нажатия
+        vkKey.add_button("на сегодня", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("на завтра", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("на текущую неделю", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("на следующую неделю", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("вернуться в главное меню", VkKeyboardColor.SECONDARY)
 
+    mm_keyboard = KeyboardOfMainMenu().vkKey
+    schedule_keyboard = KeyboardOfSchedule().vkKey
     def launch_mm_keyboard(self, text, id):
         """
         функция отправки сообщения и установки клавиатуры
@@ -85,3 +97,12 @@ class SuperBot():
         :return: нет
         """
         self.send_message_to_user(id, text, self.mm_keyboard)
+    def launch_schedule_keyboard(self, text, id):
+        """
+        функция отправки сообщения и установки клавиатуры
+
+        :param text: текст сообщения (string)
+        :param id: id пользователя (int)
+        :return: нет
+        """
+        self.send_message_to_user(id, text, self.schedule_keyboard)
