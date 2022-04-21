@@ -2,10 +2,13 @@
 from classes.superBot import *
 from functions.starting import *
 
+
 SB1 = SuperBot()
 msg = SB1.input_message_from_user()
 Us1 = User(msg[1])
 users.update({Us1.id: Us1})
+#найти юзера в бд, если найдешь, то присвоить ему номер группы
+Us1.student_group = set_group(Us1.id)
 while(True):
     if msg[0] == "начать":
         start(SB1, Us1)
