@@ -20,6 +20,7 @@ def start(id):
     welcome_message = "Этот бот был создан для помощи студентам МИРЭА." \
                       " Он может показывать расписание, ДЗ," \
                       " ФИО преподавателя, делать заметки"
+
     send_some_message(id, welcome_message)
 def change_number_of_group():
 

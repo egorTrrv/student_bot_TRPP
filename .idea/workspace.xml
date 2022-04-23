@@ -4,44 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94dd17d0-d357-445b-9b41-1fbe2c626a02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/super_bot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/doctrees/environment.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/doctrees/index.doctree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/.buildinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_sources/index.rst.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/alabaster.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/base-stemmer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/basic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/doctools.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/documentation_options.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/jquery-3.5.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/language_data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/pygments.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/russian-stemmer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/searchtools.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/translations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/underscore-1.13.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/_static/underscore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/genindex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/objects.inv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/sphinx/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+    <list default="true" id="23a798a3-63da-4b5c-a1c1-e40189824bcb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/бот_код.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/super_bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/super_bot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/.buildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/base-stemmer.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/base-stemmer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/doctools.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/doctools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/documentation_options.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/documentation_options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/jquery-3.5.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/jquery-3.5.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/russian-stemmer.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/russian-stemmer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/searchtools.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/searchtools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/translations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/underscore-1.13.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/underscore-1.13.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/underscore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/underscore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/doctrees/environment.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/doctrees/index.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/.buildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_sources/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/alabaster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/base-stemmer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/documentation_options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/jquery-3.5.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/language_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/russian-stemmer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/translations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/underscore-1.13.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/_static/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sphinx/html/searchindex.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/superBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/superBot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super_bot_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/super_bot_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,44 +73,27 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="284bH2TxR9ECBUs29iAdaJMwPvY" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="28BbMDhTbsr44UL9NTIacLnBDzc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/conf.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/setup.py" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
   </component>
-  <component name="RunManager" selected="Python.conf">
-    <configuration name="conf" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="super_bot" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Екатерина\PycharmProjects\content10\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/conf.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="super_bot" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="super_bot" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager">
     <configuration name="setup" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="super_bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,7 +101,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Екатерина\PycharmProjects\content10\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\kkore_1vs0c4g\AppData\Local\Programs\Python\Python310\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -113,34 +115,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.setup" />
-      <item itemvalue="Python.conf" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="94dd17d0-d357-445b-9b41-1fbe2c626a02" name="Changes" comment="" />
-      <created>1650478714153</created>
+      <changelist id="23a798a3-63da-4b5c-a1c1-e40189824bcb" name="Changes" comment="" />
+      <created>1650692876670</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1650478714153</updated>
+      <updated>1650692876670</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -5,7 +5,7 @@ from sphinx.setup_command import BuildDoc
 
 cmdclass = {'build_sphinx': BuildDoc}
 
-#создание описания на основе readme
+'''создание описания на основе readme'''
 with open("README.md", "r") as fh:
 	long_description = fh.read()
 

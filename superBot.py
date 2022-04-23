@@ -1,8 +1,8 @@
 import vk_api
-from vk_api.longpoll import VkLongPoll, VkEventType #связь с ботом
-from vk_api.keyboard import VkKeyboard, VkKeyboardColor #клавиатура(кнопки)
+from vk_api.longpoll import VkLongPoll, VkEventType  # связь с ботом
+from vk_api.keyboard import VkKeyboard, VkKeyboardColor  # клавиатура(кнопки)
 
-#связь с ботом
+# связь с ботом
 vk_session = vk_api.VkApi(token="593662ffd599297e66363409dbd93f093c691c8119fa51c1c5ac4e5f58d41eaa4cad6b2e714e22c9ea72e")
 session_api = vk_session.get_api()
 longpool = VkLongPoll(vk_session)

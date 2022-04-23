@@ -1,5 +1,5 @@
 .. super_bot documentation master file, created by
-   sphinx-quickstart on Fri Apr  1 21:06:51 2022.
+   sphinx-quickstart on Thu Apr 21 08:23:06 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -19,18 +19,24 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-Classes
+Bot
 ==================
-.. automodule:: super_bot.forms
+
+.. automodule:: super_bot.superBot
    :members:
    :undoc-members:
 
-.. automodule:: super_bot.models
+Super_bot_main
+==================
+
+.. automodule:: super_bot.super_bot_main
    :members:
    :undoc-members:
 
-Functions
+User
 ==================
-.. automodule:: super_bot.views
+
+.. automodule:: super_bot.user
    :members:
    :undoc-members:
+
