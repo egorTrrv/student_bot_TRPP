@@ -44,7 +44,7 @@ def change_number_of_group(sb, us):
     us.student_group = answer[0]
     #возвращение в Глав меню
     text = "номер вашей группы сохранён:" + users[us.id].student_group
-    sb.launch_mm_keyboard(text, us.id)
+    sb.launch_mm_keyboard(us.id, text)
 
 
 

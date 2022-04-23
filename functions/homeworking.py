@@ -1,6 +1,6 @@
-def scheduling(sb, us):
-    text = "введите команду:"
-    sb.launch_schedule_keyboard(us.id, text)
+def homework(sb, us):
+    text = "выберете предмет:"
+    sb.launch_kks_keyboard(us.id, text)
     msg = sb.input_message_from_user()
     while(True):
         if msg[0] == "на сегодня":

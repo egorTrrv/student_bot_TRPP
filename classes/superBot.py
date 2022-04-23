@@ -1,8 +1,8 @@
-import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType #связь с ботом
-from vk_api.keyboard import VkKeyboard, VkKeyboardColor #клавиатура(кнопки)
 
 #связь с ботом
+from classes.homework_keyboard import *
+
 vk_session = vk_api.VkApi(token="593662ffd599297e66363409dbd93f093c691c8119fa51c1c5ac4e5f58d41eaa4cad6b2e714e22c9ea72e")
 session_api = vk_session.get_api()
 longpool = VkLongPoll(vk_session)
@@ -63,7 +63,7 @@ class SuperBot():
             хранит свойства клавиатуры
 
         """
-        vkKey = VkKeyboard(one_time=True, inline=False)#one_time=True чтобы клавиатура исчезла после нажатия
+        vkKey = VkKeyboard(one_time=False, inline=False)#one_time=True чтобы клавиатура исчезла после нажатия
         vkKey.add_button("расписание", VkKeyboardColor.SECONDARY)
         vkKey.add_line()
         vkKey.add_button("домашние задания", VkKeyboardColor.SECONDARY)
@@ -75,7 +75,7 @@ class SuperBot():
         vkKey.add_button("изменить номер группы", VkKeyboardColor.SECONDARY)
 
     class KeyboardOfSchedule:
-        vkKey = VkKeyboard(one_time=True)#one_time=True чтобы клавиатура исчезла после нажатия
+        vkKey = VkKeyboard(one_time=False)#one_time=True чтобы клавиатура исчезла после нажатия
         vkKey.add_button("на сегодня", VkKeyboardColor.SECONDARY)
         vkKey.add_line()
         vkKey.add_button("на завтра", VkKeyboardColor.SECONDARY)
@@ -88,7 +88,7 @@ class SuperBot():
 
     mm_keyboard = KeyboardOfMainMenu().vkKey
     schedule_keyboard = KeyboardOfSchedule().vkKey
-    def launch_mm_keyboard(self, text, id):
+    def launch_mm_keyboard(self, id, text):
         """
         функция отправки сообщения и установки клавиатуры
 
@@ -97,7 +97,7 @@ class SuperBot():
         :return: нет
         """
         self.send_message_to_user(id, text, self.mm_keyboard)
-    def launch_schedule_keyboard(self, text, id):
+    def launch_schedule_keyboard(self,id, text):
         """
         функция отправки сообщения и установки клавиатуры
 
@@ -106,3 +106,10 @@ class SuperBot():
         :return: нет
         """
         self.send_message_to_user(id, text, self.schedule_keyboard)
+    kks = KeyboardOfSubjects().vkKey
+    kks1 = KeyboardOfSubjects().vkKey1
+
+    def launch_kks_keyboard(self, id, text):
+        self.send_message_to_user(id, text, self.kks)
+        self.send_message_to_user(id, "&#8597;", self.kks1)
+
