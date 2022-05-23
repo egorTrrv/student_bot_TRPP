@@ -29,7 +29,7 @@ while(True):
         msg = SB1.input_message_from_user()
         continue
     else:
-        SB1.launch_mm_keyboard(Us1.id, "Введи команду, Друг!")
+        SB1.launch_mm_keyboard(Us1.id, "Введи команду!")
         msg = SB1.input_message_from_user()
         continue
         #SB1.launch_mm_keyboard("Введите команду!", Us1.id)

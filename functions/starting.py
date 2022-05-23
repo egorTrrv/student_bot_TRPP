@@ -36,6 +36,7 @@ def change_number_of_group(sb, us):
         text = "Введите настоящий номер группы! Например, ИКБО-01-20"
         sb.send_message_to_user(us.id, text)
         answer = sb.input_message_from_user()
+    answer[0] = answer[0].upper()
     if us.student_group == "":
         ex = [us.id, answer[0]]
         sql_insert(ex)
