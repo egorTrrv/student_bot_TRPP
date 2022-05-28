@@ -36,10 +36,9 @@ def on_week(us, smesh = 0):
             "\nСуббота:\n",            ]
     for i in range(1, 7):
         subs = find_subjects_by_group(group, i)
-        if (week % 2) == 0:
-            subs = subs[1:12:2]
-        else:
-            subs = subs[0:12:2]
+
+        subs = choose_subs(subs, week)
+
         msg += days[i-1]
         msg += build_msg(subs, week)
     return msg
@@ -50,11 +49,19 @@ def on_today(us):
     day = datetime.datetime.today().weekday()+1
     subs = find_subjects_by_group(group, day)
     week = datetime.datetime.today().isocalendar()[1]-5
+    subs = choose_subs(subs, week)
+    return build_msg(subs, week)
+
+def choose_subs(subs, week):
+    for i in range(12):
+        if "Военная" in subs[i]:
+            for j in range(8):
+                subs[i+j] = "военная подготовка;;занятие;;;;;;"
     if (week%2)==0:
         subs = subs[1:12:2]
     else:
         subs = subs[0:12:2]
-    return build_msg(subs, week)
+    return subs
 
 def on_tomorrow(us):
     group = us.student_group
@@ -66,10 +73,7 @@ def on_tomorrow(us):
     else:
         day += 1
     subs = find_subjects_by_group(group, day)
-    if (week%2)==0:
-        subs = subs[1:12:2]
-    else:
-        subs = subs[0:12:2]
+    subs = choose_subs(subs, week)
     return build_msg(subs, week)
 
 def build_msg(subs, week):
@@ -79,6 +83,9 @@ def build_msg(subs, week):
     for i in range(6):
         if subs[i] == "":
             continue
+        if "…" in subs[i]:
+            continue
+        print(subs[i])
         flesh = subs[i].split(";;")
         if flesh[3] == "Д":
             flesh[3] = "Дистанционно"
@@ -100,6 +107,7 @@ def build_msg(subs, week):
 
         for j in range(len(flesh)):
             if "н." in flesh[j][0]:
+
                 if not str(week) in flesh[j][0]:
                     continue
                 else:

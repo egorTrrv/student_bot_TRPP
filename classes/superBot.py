@@ -106,10 +106,15 @@ class SuperBot():
         :return: нет
         """
         self.send_message_to_user(id, text, self.schedule_keyboard)
-    kks = KeyboardOfSubjects().vkKey
-    kks1 = KeyboardOfSubjects().vkKey1
 
-    def launch_kks_keyboard(self, id, text):
-        self.send_message_to_user(id, text, self.kks)
-        self.send_message_to_user(id, "&#8597;", self.kks1)
+
+    def launch_kks_keyboard(self, id, subs, text):
+        #kks = KeyboardOfSubjects().vkKey
+        #kks1 = KeyboardOfSubjects().vkKey1
+        keyboards = create_keybpoards(subs)
+        print(keyboards[0])
+        self.send_message_to_user(id, text, keyboards[0])
+        if len(keyboards) > 1:
+            for k in range(1, len(keyboards)):
+                self.send_message_to_user(id, "&#8597;", keyboards[k])
 
