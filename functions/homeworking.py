@@ -1,5 +1,6 @@
 from functions.work_with_sql import *
 
+
 def homework(sb, us):
     text = "выберете предмет:"
     group = us.student_group
@@ -10,17 +11,41 @@ def homework(sb, us):
     print(msg)
     while(True):
         if msg[0][:36:] in subs:
-            sb.send_message_to_user(us.id, "Вот тебе Дз чувак")
-        elif msg[0] == "расписание":
-            sb.send_message_to_user(us.id, "1!")
-        elif msg[0] == "домашние задания":
-            homework(sb, us)
-        elif msg[0] == "узнать имя преподавателя":
-            sb.send_message_to_user(us.id, "3!")
-        elif msg[0] == "заметки":
-            sb.send_message_to_user(us.id, "4!")
+            sub = msg[0][:36:]
+            hm = find_in_table_id_and_homeworking(us.id, sub)
+
+            if hm[0] == "":
+                sb.launch_hm_keyboard(us.id, "Нет данных о ДЗ")
+            else:
+                sb.send_message_to_user(us.id, "ДЗ:")
+                sb.launch_hm_keyboard(us.id, hm[0])
+            msg = sb.input_message_from_user()
+            while (True):
+                print(msg)
+                print(msg[0])
+                if msg[0] == "вернуться в главное меню":
+                    return ""
+                if msg[0] == "изменить дз":
+                    sb.send_message_to_user(us.id, "Введите ДЗ:")
+                    msg = sb.input_message_from_user()
+                    if msg[0] == "изменить дз":
+                        continue
+                    change_hm_in_id_and_homeworking(us.id, msg[0], sub, hm[1])
+                    sb.send_message_to_user(us.id, "ДЗ изменено!")
+                else:
+                    sb.send_message_to_user(us.id, "Введите команду!:")
+                msg = sb.input_message_from_user()
+        elif msg[0] == "расписание 📜":
+            return msg[0]
+        elif msg[0] == "домашние задания 📚":
+            return msg[0]
+        elif msg[0] == "найти имя-отчество преподавателя👤":
+            return msg[0]
+        elif msg[0] == "заметки 📝":
+            return msg[0]
         elif msg[0] == "изменить номер группы":
-            sb.send_message_to_user(us.id, "5!")
+            return msg[0]
         else:
             sb.send_message_to_user(us.id, "Введите команду!")
+
         msg = sb.input_message_from_user()

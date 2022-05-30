@@ -28,12 +28,12 @@ def on_week(us, smesh = 0):
     group = us.student_group
     week = datetime.datetime.today().isocalendar()[1]-5 + smesh
     msg = ""
-    days = ["\nПонедельник:\n",
-            "\nВторник:\n",
-            "\nСреда:\n",
-            "\nЧетверг:\n",
-            "\nПятница:\n",
-            "\nСуббота:\n",            ]
+    days = ["\n	&#127761; Понедельник:\n",
+            "\n &#127762; Вторник:\n",
+            "\n &#127763; Среда:\n",
+            "\n &#127764; Четверг:\n",
+            "\n &#127765; Пятница:\n",
+            "\n &#127766; Суббота:\n",            ]
     for i in range(1, 7):
         subs = find_subjects_by_group(group, i)
 
@@ -50,7 +50,15 @@ def on_today(us):
     subs = find_subjects_by_group(group, day)
     week = datetime.datetime.today().isocalendar()[1]-5
     subs = choose_subs(subs, week)
-    return build_msg(subs, week)
+    days = ["понедельник:\n",
+            "вторник:\n",
+            "среда:\n",
+            "четверг:\n",
+            "пятница:\n",
+            "суббота:\n",
+            "воскресение\n"]
+
+    return f"Сегодня {days[day-1]}\n" + build_msg(subs, week)
 
 def choose_subs(subs, week):
     for i in range(12):
@@ -66,6 +74,13 @@ def choose_subs(subs, week):
 def on_tomorrow(us):
     group = us.student_group
     day = datetime.datetime.today().weekday()+1
+    days = ["понедельник:\n",
+            "вторник:\n",
+            "среда:\n",
+            "четверг:\n",
+            "пятница:\n",
+            "суббота:\n",
+            "воскресение\n"]
     week = datetime.datetime.today().isocalendar()[1]-5
     if day == 7:
         day = 1
@@ -74,7 +89,7 @@ def on_tomorrow(us):
         day += 1
     subs = find_subjects_by_group(group, day)
     subs = choose_subs(subs, week)
-    return build_msg(subs, week)
+    return  f"Завтра {days[day-1]}"+build_msg(subs, week)
 
 def build_msg(subs, week):
     msg = ""
@@ -85,7 +100,6 @@ def build_msg(subs, week):
             continue
         if "…" in subs[i]:
             continue
-        print(subs[i])
         flesh = subs[i].split(";;")
         if flesh[3] == "Д":
             flesh[3] = "Дистанционно"
@@ -112,14 +126,9 @@ def build_msg(subs, week):
                     continue
                 else:
                     flesh[j][0] = flesh[j][0][flesh[j][0].find("н.")+3::]
-            msg1+=f"""
-            {flesh[j][0]} ({flesh[j][1]})
-            {flesh[j][3]}
-            {flesh[j][2]}"""
+            msg1+=f"\n{flesh[j][0]} ({flesh[j][1]})\n\t{flesh[j][3]}, {flesh[j][2]}\n"
         if msg1 != "":
-            msg += f"""
-            
-            Пара №{i + 1}({time[i]})"""
+            msg += f"\nПара {i + 1}&#8419;({time[i]})"
             msg += msg1
     if msg == "":
         msg = "Выходной! Пар нет!"

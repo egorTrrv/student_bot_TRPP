@@ -64,16 +64,26 @@ class SuperBot():
 
         """
         vkKey = VkKeyboard(one_time=False, inline=False)#one_time=True чтобы клавиатура исчезла после нажатия
-        vkKey.add_button("расписание", VkKeyboardColor.SECONDARY)
+        vkKey.add_button("расписание &#128220;", VkKeyboardColor.SECONDARY)
         vkKey.add_line()
-        vkKey.add_button("домашние задания", VkKeyboardColor.SECONDARY)
+        vkKey.add_button("домашние задания &#128218;", VkKeyboardColor.SECONDARY)
         vkKey.add_line()
-        vkKey.add_button("узнать имя преподавателя", VkKeyboardColor.SECONDARY)
+        vkKey.add_button("найти имя-отчество преподавателя&#128100;", VkKeyboardColor.SECONDARY)
         vkKey.add_line()
-        vkKey.add_button("заметки", VkKeyboardColor.SECONDARY)
+        vkKey.add_button("заметки &#128221;", VkKeyboardColor.SECONDARY)
         vkKey.add_line()
         vkKey.add_button("изменить номер группы", VkKeyboardColor.SECONDARY)
 
+    class KeyboardOfHomework:
+        vkKey = VkKeyboard(one_time=False)  # one_time=True чтобы клавиатура исчезла после нажатия
+        vkKey.add_button("изменить ДЗ", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("вернуться в главное меню", VkKeyboardColor.SECONDARY)
+    class KeyboardOfNotes:
+        vkKey = VkKeyboard(one_time=False)#one_time=True чтобы клавиатура исчезла после нажатия
+        vkKey.add_button("изменить заметку", VkKeyboardColor.SECONDARY)
+        vkKey.add_line()
+        vkKey.add_button("вернуться в главное меню", VkKeyboardColor.SECONDARY)
     class KeyboardOfSchedule:
         vkKey = VkKeyboard(one_time=False)#one_time=True чтобы клавиатура исчезла после нажатия
         vkKey.add_button("на сегодня", VkKeyboardColor.SECONDARY)
@@ -87,7 +97,30 @@ class SuperBot():
         vkKey.add_button("вернуться в главное меню", VkKeyboardColor.SECONDARY)
 
     mm_keyboard = KeyboardOfMainMenu().vkKey
+    hm_keyboard = KeyboardOfHomework().vkKey
+    notes_keyboard = KeyboardOfNotes().vkKey
+
     schedule_keyboard = KeyboardOfSchedule().vkKey
+
+    def launch_notes_keyboard(self, id, text):
+        """
+        функция отправки сообщения и установки клавиатуры
+
+        :param text: текст сообщения (string)
+        :param id: id пользователя (int)
+        :return: нет
+        """
+        self.send_message_to_user(id, text, self.notes_keyboard)
+
+    def launch_hm_keyboard(self, id, text):
+        """
+        функция отправки сообщения и установки клавиатуры
+
+        :param text: текст сообщения (string)
+        :param id: id пользователя (int)
+        :return: нет
+        """
+        self.send_message_to_user(id, text, self.hm_keyboard)
     def launch_mm_keyboard(self, id, text):
         """
         функция отправки сообщения и установки клавиатуры

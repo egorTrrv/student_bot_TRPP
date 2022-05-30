@@ -1,5 +1,6 @@
 from work_with_sql import *
 from openpyxl import load_workbook
+from docx import *
 import os
 """def cr_one(i):
     #os.remove(f'day_{i}.db')
@@ -7,6 +8,13 @@ import os
     sql_table(con)
     ex = [0, ""]
     sql_insert(ex)"""
+def create_table_id_homeworking():
+    create_table_id_and_homeworking()
+    sql_insert_in_id_and_homeworking(["","", "","","","", "","","","", "","","","", "",""])
+
+def create_table_id_notes():
+    create_table_id_and_notes()
+    sql_insert_in_id_and_notes(["","", "","","","", "","","","", "","","","", "",""])
 i = 0
 def fill_day(num):
     name_of_heads = ["ИИИ", "ИИТ", "ИПТИП", "ИРЭИ", "ИТУ"]
@@ -153,4 +161,19 @@ for i in range(1,7):
     cr_mon(i)
     fill_day(i)
 """
-make_table_of_groups_and_subs()
+
+#def create_db_of_proff():
+
+#make_table_of_groups_and_subs()
+#create_table_id_and_notes()
+#sql_insert_in_id_and_homeworking(["111","погладить кота", "покормить порося","корову дойнуть","","", "","","","", "","","","", "","физика;;химия;;ОБЖ"])
+"""print(find_in_table_id_and_homeworking("111", "биология"))
+change_hm_in_id_and_homeworking("111", "полить капусту", "биология", find_in_table_id_and_homeworking("111", "биология")[1])
+print(find_in_table_id_and_homeworking("111", "биология"))"""
+group = find_in_table_profs("Волков")
+text = ""
+for f in range(len(group[0])):
+    text += group[0][f]
+    text += ", Дисциплины: " + group[1][f]
+    text += "\n"
+print(text)
